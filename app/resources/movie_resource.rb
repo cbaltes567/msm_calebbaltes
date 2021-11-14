@@ -11,6 +11,8 @@ class MovieResource < ApplicationResource
 
   # Direct associations
 
+  has_many   :bookmarks
+
   has_many   :characters
 
   # Indirect associations
