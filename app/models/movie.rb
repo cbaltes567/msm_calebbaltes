@@ -14,6 +14,10 @@ class Movie < ApplicationRecord
 
   # Indirect associations
 
+  has_many   :bookmarkers,
+             :through => :bookmarks,
+             :source => :user
+
   has_many   :reviewers,
              :through => :reviews,
              :source => :user
