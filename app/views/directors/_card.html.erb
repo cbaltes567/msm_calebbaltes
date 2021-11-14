@@ -22,7 +22,9 @@
 
       <dt>Picture</dt>
       <!-- Display picture start -->
-      <dd><%= director.picture %></dd>
+      <dd>
+        <%= cl_image_tag @director.picture, class: "img-fluid" %>
+      </dd>
       <!-- Display picture end -->
 
     </dl>
